@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resources">
+      <UniqueIdentifier>{5f342f88-33f1-4b31-be01-6a944f5a70bd}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="print_center_fix">
+      <UniqueIdentifier>{aa3f7160-d39b-435b-81ed-f99f5f7eb9ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="print_center_fix\include">
+      <UniqueIdentifier>{48f51799-71ce-468b-a270-c2ff35af349d}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="print_center_fix\src">
+      <UniqueIdentifier>{e15ee2d7-9299-4d89-a0cd-ae41d99d726e}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{75472495-7165-45cd-aff5-a7f3bf37e936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk">
+      <UniqueIdentifier>{a7c598c6-d152-4adc-bed2-9569a24fec43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk\include">
+      <UniqueIdentifier>{367707ba-078f-4b24-b5ba-4eff1a832d56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk\src">
+      <UniqueIdentifier>{e90983c7-47c3-470b-8465-6e72e6ce6d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk\include\common">
+      <UniqueIdentifier>{3265e663-5b3d-473c-b368-b72c0788fae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk\include\dll">
+      <UniqueIdentifier>{1d3c11e3-4411-4b3e-82a2-82df60a1508c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk\include\engine">
+      <UniqueIdentifier>{ec123d78-57b0-4715-abeb-6487684664c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk\include\pm_shared">
+      <UniqueIdentifier>{a912bcec-5058-4eb6-b644-c0997f6c88e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk\include\public">
+      <UniqueIdentifier>{d10f371c-12c5-49a5-b199-7595e6971846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\cssdk\include\dll\api">
+      <UniqueIdentifier>{e1401b8e-6db8-4732-8ab6-ecc5514f55a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\metamod">
+      <UniqueIdentifier>{cc6ceb6d-3370-4389-b4e0-ee8f3481d4fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\metamod\include">
+      <UniqueIdentifier>{c11c9b56-c618-48fe-95da-d91c89dc7db4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\metamod\src">
+      <UniqueIdentifier>{4dba383e-675e-4ae2-96be-a999d1545932}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\bsp.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\cl_entity.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\consts.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\cvar.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\entity_state.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\event_args.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\hook_chains.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\hook_chain_priority.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\model.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\net_address.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\pm_trace.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\sequence.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\trace.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\user_cmd.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\common\weapon_data.h">
+      <Filter>sdk\cssdk\include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\activity.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\ammo.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\cdll_dll.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\decals.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\entity_base.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\ext_defs.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\game_rules.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\hint_message.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\items.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\monsters.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\monster_base.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\monster_event.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\observer.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\player.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\player_consts.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\regamedll_api.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\regamedll_consts.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\save_restore.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\unified_signals.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\weapons.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\weapon_type.h">
+      <Filter>sdk\cssdk\include\dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\cmd_rehlds.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\common_rehlds.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\consistency.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\custom.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\delta_packet.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\edict.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\eiface.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\entity_vars.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\flight_recorder.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\global_vars.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\pr_dlls.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\rehlds_api.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\rehlds_interfaces.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\server.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\engine\userid_rehlds.h">
+      <Filter>sdk\cssdk\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\pm_shared\pm_defs.h">
+      <Filter>sdk\cssdk\include\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\pm_shared\pm_info.h">
+      <Filter>sdk\cssdk\include\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\pm_shared\pm_materials.h">
+      <Filter>sdk\cssdk\include\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\pm_shared\pm_move_vars.h">
+      <Filter>sdk\cssdk\include\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\pm_shared\pm_shared.h">
+      <Filter>sdk\cssdk\include\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\public\arch_types.h">
+      <Filter>sdk\cssdk\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\public\base_types.h">
+      <Filter>sdk\cssdk\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\public\interface.h">
+      <Filter>sdk\cssdk\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\public\os_config.h">
+      <Filter>sdk\cssdk\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\public\strind.h">
+      <Filter>sdk\cssdk\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\public\utils.h">
+      <Filter>sdk\cssdk\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\public\vector.h">
+      <Filter>sdk\cssdk\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\api\cs_entity.h">
+      <Filter>sdk\cssdk\include\dll\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\api\cs_player.h">
+      <Filter>sdk\cssdk\include\dll\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\api\cs_player_item.h">
+      <Filter>sdk\cssdk\include\dll\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\cssdk\include\cssdk\dll\api\cs_player_weapon.h">
+      <Filter>sdk\cssdk\include\dll\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\api.h">
+      <Filter>sdk\metamod\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\engine.h">
+      <Filter>sdk\metamod\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\engine_hooks.h">
+      <Filter>sdk\metamod\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\gamedll.h">
+      <Filter>sdk\metamod\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\gamedll_hooks.h">
+      <Filter>sdk\metamod\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\os_dep.h">
+      <Filter>sdk\metamod\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\plugin_info.h">
+      <Filter>sdk\metamod\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\utils.h">
+      <Filter>sdk\metamod\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdk\metamod\include\metamod\metamod_config.h">
+      <Filter>print_center_fix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\print_center_fix\include\print_center_fix\amxx_module.h">
+      <Filter>print_center_fix\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\print_center_fix\include\print_center_fix\hook.h">
+      <Filter>print_center_fix\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\print_center_fix\include\print_center_fix\memory_protect.h">
+      <Filter>print_center_fix\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\print_center_fix\include\print_center_fix\module_base.h">
+      <Filter>print_center_fix\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\print_center_fix\include\print_center_fix\main.h">
+      <Filter>print_center_fix\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\print_center_fix\include\print_center_fix\rehlds_api.h">
+      <Filter>print_center_fix\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\print_center_fix\include\print_center_fix\reunion_api.h">
+      <Filter>print_center_fix\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\sdk\metamod\src\engine.cpp">
+      <Filter>sdk\metamod\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdk\metamod\src\engine_hooks.cpp">
+      <Filter>sdk\metamod\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdk\metamod\src\gamedll.cpp">
+      <Filter>sdk\metamod\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdk\metamod\src\gamedll_hooks.cpp">
+      <Filter>sdk\metamod\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdk\metamod\src\h_export.cpp">
+      <Filter>sdk\metamod\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdk\metamod\src\metamod_api.cpp">
+      <Filter>sdk\metamod\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdk\metamod\src\utils.cpp">
+      <Filter>sdk\metamod\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\print_center_fix\src\amxx_module.cpp">
+      <Filter>print_center_fix\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\print_center_fix\src\hook.cpp">
+      <Filter>print_center_fix\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\print_center_fix\src\main.cpp">
+      <Filter>print_center_fix\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\print_center_fix\src\memory_protect.cpp">
+      <Filter>print_center_fix\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\print_center_fix\src\module_base.cpp">
+      <Filter>print_center_fix\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdk\cssdk\src\interface.cpp">
+      <Filter>sdk\cssdk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\print_center_fix\src\rehlds_api.cpp">
+      <Filter>print_center_fix\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\print_center_fix\src\reunion_api.cpp">
+      <Filter>print_center_fix\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="printcenterfix_mm.def">
+      <Filter>sdk\metamod</Filter>
+    </None>
+  </ItemGroup>
+</Project>
