@@ -24,9 +24,7 @@ long MemoryProtect::page_mask_ = ~(page_size_ - 1);
 /// <summary>
 /// </summary>
 MemoryProtect::MemoryProtect(void* address, const std::size_t size)
-	: MemoryProtect(reinterpret_cast<uintptr_t>(address), size)
-{
-}
+	: MemoryProtect(reinterpret_cast<uintptr_t>(address), size) {}
 
 /// <summary>
 /// </summary>

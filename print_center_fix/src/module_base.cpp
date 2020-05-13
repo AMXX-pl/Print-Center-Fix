@@ -18,15 +18,15 @@
 uintptr_t AppModule::find_pattern(const char* pattern, const char* mask, const int extra_offset) const
 {
 	const auto pattern_length = std::strlen(mask);
-	const auto pattern_bytes = reinterpret_cast<const byte*>(pattern);
+	const auto* const pattern_bytes = reinterpret_cast<const byte*>(pattern);
 
-	auto cur_address = reinterpret_cast<const byte*>(module_info_.address) - 1;
-	const auto end_address = cur_address + module_info_.size - pattern_length;
+	const auto* cur_address = reinterpret_cast<const byte*>(module_info_.address) - 1;
+	const auto* const end_address = cur_address + module_info_.size - pattern_length;
 
 	while (++cur_address <= end_address) {
 		auto found = true;
 
-		for (size_t i = 0; i < pattern_length; ++i) {
+		for (std::size_t i = 0; i < pattern_length; ++i) {
 			if (cur_address[i] != pattern_bytes[i] && mask[i] != '?') {
 				found = false;
 				break;
@@ -48,7 +48,7 @@ uintptr_t AppModule::find_pattern(const char* pattern, const char* mask, const i
 bool AppModule::get_module_info(const char* name)
 {
 	MODULEINFO info = {};
-	const auto handle = GetModuleHandle(name);
+	auto* const handle = GetModuleHandle(name);
 
 	if (handle == nullptr) {
 		MetaUtils::log_console("[%s] Failed to get %s module handle.\n", META_PLUGIN_LOG_TAG, name);
@@ -73,7 +73,7 @@ bool AppModule::get_module_info(const char* name)
 /// </summary>
 static int find_module(dl_phdr_info* info, std::size_t, void* data)
 {
-	auto module_info = static_cast<ModuleInfo*>(data);
+	auto* module_info = static_cast<ModuleInfo*>(data);
 	
 	if (!std::strstr(info->dlpi_name, module_info->name))
 		return 0;

@@ -31,9 +31,24 @@ public:
 	/// </summary>
 	~Hook();
 
+	/// <summary>
+	/// <para>Move constructor.</para>
+	/// </summary>
 	Hook(Hook&&) = delete;
+
+	/// <summary>
+	/// <para>Copy constructor.</para>
+	/// </summary>
 	Hook(const Hook&) = delete;
+
+	/// <summary>
+	/// <para>Move assignment operator.</para>
+	/// </summary>
 	Hook& operator=(Hook&&) = delete;
+
+	/// <summary>
+	/// <para>Copy assignment operator.</para>
+	/// </summary>
 	Hook& operator=(const Hook&) = delete;
 
 	/// <summary>
@@ -94,9 +109,24 @@ private:
 				hook_.enable();
 		}
 
+		/// <summary>
+		/// <para>Move constructor.</para>
+		/// </summary>
 		HookDisabler(HookDisabler&&) = delete;
+
+		/// <summary>
+		/// <para>Copy constructor.</para>
+		/// </summary>
 		HookDisabler(const HookDisabler&) = delete;
+
+		/// <summary>
+		/// <para>Move assignment operator.</para>
+		/// </summary>
 		HookDisabler& operator=(HookDisabler&&) = delete;
+
+		/// <summary>
+		/// <para>Copy assignment operator.</para>
+		/// </summary>
 		HookDisabler& operator=(const HookDisabler&) = delete;
 
 	private:

@@ -114,7 +114,7 @@ void client_print_tramp(Edict* client, const int msg_dest, char* msg)
 	}
 
 	for (auto i = 1; i <= g_global_vars->max_clients; ++i) {
-		const auto entity = Engine::entity_of_ent_index(i);
+		auto* const entity = Engine::entity_of_ent_index(i);
 
 		if (!cssdk_is_valid_entity(entity) || entity->vars.net_name.is_null_or_empty())
 			continue;

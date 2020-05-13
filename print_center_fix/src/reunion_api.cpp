@@ -33,7 +33,7 @@ ReunionApiInterface* ReunionApi::api_ = nullptr;
 /// </summary>
 bool ReunionApi::init()
 {
-	const auto rehlds_funcs = RehldsApi::funcs();
+	const auto* const rehlds_funcs = RehldsApi::funcs();
 
 	if (!rehlds_funcs)
 		return false;
