@@ -28,7 +28,8 @@ set(CMAKE_CXX_FLAGS_RELWITHDEBINFO ${CMAKE_C_FLAGS_RELWITHDEBINFO})
 
 # Compiler flags
 target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE
-    -pipe -m32 -mtune=generic -msse3 -ffunction-sections -fdata-sections
+    -pipe -m32 -mtune=generic -march=x86-64 -msse -msse2 -msse3 -mssse3 -mmmx
+    -ffunction-sections -fdata-sections
 
     # Build type Release, MinSizeRel
     $<$<OR:$<CONFIG:Release>,$<CONFIG:MinSizeRel>>:
@@ -55,7 +56,7 @@ target_link_options(${CMAKE_PROJECT_NAME} PRIVATE
 
     # Build type Release, MinSizeRel
     $<$<OR:$<CONFIG:Release>,$<CONFIG:MinSizeRel>>:
-    -Wl,--strip-all>
+    -Wl,-O3 -Wl,--strip-all>
 )
 
 # Libraries linking

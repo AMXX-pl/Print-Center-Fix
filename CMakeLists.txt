@@ -2,7 +2,7 @@
 # Compile with GCC:
 #   rm -rf build && CC=gcc CXX=g++ cmake -B build && cmake --build build --parallel
 #
-# Compile with Intel?? C++ Compiler:
+# Compile with Intel C++ Compiler:
 #   rm -rf build && CC=icc CXX=icpc cmake -B build && cmake --build build --parallel
 #-------------------------------------------------------------------------------------------
 
@@ -89,6 +89,9 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
 #-------------------------------------------------------------------------------------------
 
 target_compile_features(${CMAKE_PROJECT_NAME} PUBLIC cxx_std_17)
+
+include(CheckIPOSupported)
+check_ipo_supported() # Fatal error if IPO is not supported.
 
 set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES
     POSITION_INDEPENDENT_CODE ON
