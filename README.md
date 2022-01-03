@@ -30,29 +30,31 @@ This Metamod plugin fixes messages output on old (non-steam) CS 1.6 clients («%
 
 ## Building
 #### Prerequisites:
-Compiler with C++17 support ([Visual Studio](https://visualstudio.microsoft.com), [GCC](https://gcc.gnu.org) or [Intel C++ Compiler](https://software.intel.com/c-compilers)).  
-[CMake](https://cmake.org) version 3.13.5 or later (for Linux).
-
-#### Building on Windows:
-&nbsp;&nbsp;&nbsp;&nbsp;Just open the solution in Visual Studio and compile.
-
-#### Building on Linux:
-&nbsp;&nbsp;&nbsp;Open the console and go to the directory with sources (where *CMakeLists.txt* is located).  
-&nbsp;&nbsp;&nbsp;For compile with *GCC* run the following command:<br/>
+&nbsp;&nbsp;&nbsp;Compiler with C++17 support, [CMake](https://cmake.org) version 3.21 or later, [Ninja](https://ninja-build.org/).
+#### Build with MSVC (Windows):
 ```sh
-  rm -rf build && CC=gcc CXX=g++ cmake -B build && cmake --build build --parallel
+  cmake --preset windows-msvc-release && cmake --build --preset windows-msvc-release
 ```
-&nbsp;&nbsp;&nbsp;For compile with *Intel C++ Compiler* run the following command:<br/>
+#### Build with Clang (Windows):
 ```sh
-  rm -rf build && CC=icc CXX=icpc cmake -B build && cmake --build build --parallel
+  cmake --preset windows-clang-release && cmake --build --preset windows-clang-release
+```
+#### Build with GCC (Linux):
+```sh
+  cmake --preset linux-gcc-release && cmake --build --preset linux-gcc-release
+```
+#### Build with Clang (Linux):
+```sh
+  cmake --preset linux-clang-release && cmake --build --preset linux-clang-release
+```
+#### Build with Intel C++ Compiler (Linux):
+```sh
+  cmake --preset linux-intel-release && cmake --build --preset linux-intel-release
 ```
 
-## Release History
-* 1.0.1
-    * Updated SDKs.
-    * Added some additional optimization flags for the Linux version.
-* 1.0.0
-    * First release.
+
+## Credits
+Kubo Takehiro ([funchook](https://github.com/kubo/funchook))
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
