@@ -1,4 +1,4 @@
-# Print Center Fix [![Build Status](https://travis-ci.com/Hun1eR/Print-Center-Fix.svg?branch=master)](https://travis-ci.com/Hun1eR/Print-Center-Fix) [![Download](https://badgen.net/github/release/Hun1eR/Print-Center-Fix)](https://github.com/Hun1eR/Print-Center-Fix/releases/latest) ![Platform](https://badgen.net/badge/platform/linux%20%7C%20windows/gray) [![License](https://img.shields.io/github/license/Hun1eR/Print-Center-Fix)](LICENSE)
+# Print Center Fix [![Download](https://badgen.net/github/release/Hun1eR/Print-Center-Fix)](https://github.com/Hun1eR/Print-Center-Fix/releases/latest) ![Platform](https://badgen.net/badge/platform/linux%20%7C%20windows/gray) [![License](https://img.shields.io/github/license/Hun1eR/Print-Center-Fix)](LICENSE)
 
 
 This Metamod plugin fixes messages output on old (non-steam) CS 1.6 clients («%s» instead of a message in the center) caused by AMXX Mod X build v5260 and later.
