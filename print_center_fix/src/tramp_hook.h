@@ -77,11 +77,14 @@ namespace print_center_fix
          * @brief N/D
         */
         template <typename Ret = void, typename... Args>
-        Ret CallOriginal(Args&&... args)
+        Ret CallOriginal(Args... args)
         {
+            using OrigFunc = Ret (*)(Args...);
+
             // NOLINTNEXTLINE(performance-no-int-to-ptr)
-            const auto orig_func = reinterpret_cast<Ret (*)(Args...)>(orig_func_); // cppcheck-suppress unreadVariable
-            return orig_func(std::forward<Args>(args)...);
+            const auto orig_func = reinterpret_cast<OrigFunc>(orig_func_); // cppcheck-suppress unreadVariable
+
+            return orig_func(args...);
         }
     };
 }
